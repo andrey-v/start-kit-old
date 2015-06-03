@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin compatible="alto">
     <name>
-        <lang name="default">Start Kit</lang>
+        <lang name="default">Start Kit - 2</lang>
     </name>
     <author>
         <lang name="default">Alto CMS Team</lang>
     </author>
     <homepage>http://altocms.com</homepage>
-    <version>1.0.3</version>
+    <version>2.0.0</version>
     <requires>
         <alto>
-            <version>1.0.7</version>
+            <version>1.1</version>
         </alto>
         <system>
             <php>5.3.0</php>
