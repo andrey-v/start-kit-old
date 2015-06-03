@@ -14,4 +14,16 @@
             tinymce.init({$sSettingsTinymce});
         });
     }
+
+    {if Config::Get('view.float_editor')}
+        $(function(){
+            ls.editor.float({
+                topStep: {if Config::Get('view.header.top') == 'fixed'}60{else}0{/if}, // Отступ от верха страницы
+                dif: 0,     // Изменение ширины при прилипании (из-за стилизации может скакать один пиксель)
+                textareaClass: '.js-editor-wysiwyg',    // Селектор textarea
+                editorClass: '.mce-tinymce', // Селектор редактора
+                headerClass: '.mce-toolbar-grp' // Селектор шапки
+            });
+        });
+    {/if}
 </script>
