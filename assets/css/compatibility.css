@@ -254,3 +254,21 @@ li.active.category-show {
     font-weight: bold;
     text-decoration: underline;
 }
+
+/* ФОТОСЕТ
+______________________________________________________________*/
+.am-wrapper {
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.am-wrapper img {
+    position: absolute;
+    outline: none;
+}
+.alto-photoset {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
