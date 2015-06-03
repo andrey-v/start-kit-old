@@ -68,6 +68,7 @@ $config['head']['default']['css'] = array(
     '___path.skin.dir___/assets/css/smoothness/jquery-ui.css',
     '___path.skin.dir___/assets/css/responsive.css',
     '___path.skin.dir___/assets/css/default.css',
+    '___path.skin.dir___/assets/css/compatibility.css',
 
     /* Theme */
     '___path.skin.dir___/themes/___view.theme___/style.css',
