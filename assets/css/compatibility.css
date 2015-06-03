@@ -1,0 +1,12 @@
+/* UPLOADER */
+.uploader-actions {
+    position: relative;
+}
+
+.uploader-actions-file {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    height: 20px;
+    cursor: pointer
+}
