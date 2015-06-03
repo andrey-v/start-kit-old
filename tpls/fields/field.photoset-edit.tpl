@@ -36,7 +36,7 @@
                             {$bIsMainPhoto=true}
                         {/if}
                         <li id="photoset_photo_{$oPhoto->getId()}" {if $bIsMainPhoto}class="marked-as-preview"{/if}>
-                            <img src="{$oPhoto->getWebPath('100crop')}" alt="image"/>
+                            <img src="{$oPhoto->getWebPath('large')}" alt="image"/>
                             <textarea onblur="ls.photoset.setPreviewDescription('{$oPhoto->getId()}')"
                                       class="form-control">{$oPhoto->getDescription()}</textarea>
                             <br/>

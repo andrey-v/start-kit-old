@@ -19,7 +19,7 @@
 <div class="blog">
     <header class="blog-header">
         {$oBlogType=$oBlog->getBlogType()}
-        <img src="{$oBlog->getAvatarPath(64)}" class="avatar"/>
+        <img src="{$oBlog->getAvatarPath('big')}" class="avatar"/>
 
         <h1>
             {$oBlog->getTitle()|escape:'html'}
@@ -130,7 +130,7 @@
                     <strong>{$aLang.blog_user_administrators} ({$iCountBlogAdministrators}):</strong><br/>
                     <span class="avatar">
                         <a href="{$oUserOwner->getProfileUrl()}">
-                            <img src="{$oUserOwner->getAvatarUrl(24)}" alt="avatar"/>
+                            <img src="{$oUserOwner->getAvatarUrl('mini')}" alt="avatar"/>
                         </a>
                         <a href="{$oUserOwner->getProfileUrl()}">{$oUserOwner->getDisplayName()}</a>
                     </span>
@@ -138,7 +138,7 @@
                     {foreach $aBlogAdministrators as $oBlogUser}
                         {$oUser=$oBlogUser->getUser()}
                         <span class="user-avatar">
-                            <a href="{$oUser->getProfileUrl()}"><img src="{$oUser->getAvatarUrl(24)}" alt="avatar"/></a>
+                            <a href="{$oUser->getProfileUrl()}"><img src="{$oUser->getAvatarUrl('mini')}" alt="avatar"/></a>
                             <a href="{$oUser->getProfileUrl()}">{$oUser->getDisplayName()}</a>
                         </span>
                     {/foreach}
@@ -149,7 +149,7 @@
                         {foreach $aBlogModerators as $oBlogUser}
                             {$oUser=$oBlogUser->getUser()}
                             <span class="user-avatar">
-                                <a href="{$oUser->getProfileUrl()}"><img src="{$oUser->getAvatarUrl(24)}" alt="avatar"/></a>
+                                <a href="{$oUser->getProfileUrl()}"><img src="{$oUser->getAvatarUrl('mini')}" alt="avatar"/></a>
                                 <a href="{$oUser->getProfileUrl()}">{$oUser->getDisplayName()}</a>
                             </span>
                         {/foreach}

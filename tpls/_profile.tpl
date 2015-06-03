@@ -14,7 +14,7 @@
                 {hook run='profile_header_begin'}
 
                 <div class="profile-header-info">
-                    <img src="{$oUserProfile->getAvatarUrl(64)}" alt="{$oUserProfile->getDisplayName()}" class="avatar" itemprop="photo"/>
+                    <img src="{$oUserProfile->getAvatarUrl('big')}" alt="{$oUserProfile->getDisplayName()}" class="avatar" itemprop="photo"/>
 
                     {$sClasses = ''}
                     {if $oUserProfile->getRating()>=0}
